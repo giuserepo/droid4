@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+  
+    <ListView
+        android:id="@+id/list_fatture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+        	    <Spinner
+	        android:id="@+id/spinner_fatture"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:prompt="@string/fattura"
+	        android:layout_marginTop="20dip"
+	        android:layout_marginLeft="8dip"
+	        android:layout_marginRight="8dip"
+	    />            
+        
+
+    </LinearLayout>
+

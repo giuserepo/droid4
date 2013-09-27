@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Stretch some columns -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:scrollbars="vertical" 
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent">
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/tabfattura_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:shrinkColumns="*"
+	    android:stretchColumns="*"
+	    android:scrollbars="vertical"
+	    android:padding="8dp"
+	    >
+
+     <TableRow>
+            <TextView
+             android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_fattura"
+			 />
+            <EditText
+            android:id="@+id/numero_fattura_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="20dp"            
+            />
+            <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+			 />            
+        	<EditText
+            android:id="@+id/anno_fattura_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="20dp"            
+			/> 
+    </TableRow>	
+     <TableRow>			
+            <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/data_fattura"
+			/>             
+        	<EditText
+            android:id="@+id/data_fattura_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="12dp"           
+			/>                    
+
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#FF909090" />
+    <TableRow>
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/azienda"
+		/>         
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/azienda_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+         />  
+    </TableRow>	
+     <TableRow>	         
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/indirizzo_azienda"
+		/>         
+        <EditText
+            android:layout_span="3"
+            android:id="@+id/indirizzo_azienda_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+         /> 
+    </TableRow>	
+     <TableRow>	                    
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/partita_iva_azienda"
+		/>         
+        <EditText
+            android:layout_span="3"
+            android:id="@+id/partita_iva_azienda_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+         />
+     </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#FF909090" />     	
+     <TableRow>	       
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/intestazione"
+		/> 
+        <EditText
+            android:layout_span="3"
+            android:id="@+id/intestazione_edit"
+            android:padding="3dip"
+            android:layout_width="80dp" 
+            />
+                          
+
+    </TableRow>
+    
+    <View
+        android:layout_height="1dip"
+        android:background="#FF909090" />
+    <TableRow>	
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/descrizione"
+		/>
+        <EditText
+            android:layout_span="3"
+			android:id="@+id/descrizione_edit"
+	        android:layout_width="50dp"/>  
+	</TableRow>          
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    
+    <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/onorari"
+		/>         
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/onorari_edit"
+            android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+         />
+     </TableRow>
+    <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/inarcassa"
+		/>        
+         <EditText
+            android:layout_span="2"
+            android:id="@+id/inarcassa_edit"
+            android:padding="3dip" />
+      </TableRow>
+     <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/imponibile"
+		/>          
+         <EditText
+            android:layout_span="2"
+            android:id="@+id/imponibile_edit"
+            android:padding="3dip" />  
+    </TableRow>
+    <TableRow> 
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/iva"
+		/>           
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/iva_edit"
+            android:padding="3dip" />                  
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+
+    <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/totale_fattura"
+		/>         
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/totale_fattura_edit"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow> 
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/ra"
+		/>           
+       <EditText
+            android:layout_span="2"
+            android:id="@+id/ra_edit"
+            android:padding="3dip" />    
+        
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/totale_pagare"
+		/>         
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/totale_pagare_edit"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/condizioni"
+		/>         
+        <EditText
+            android:layout_span="3"
+            android:id="@+id/condizioni_edit"
+            android:padding="3dip" />
+    </TableRow>
+
+            <Button
+            android:id="@+id/ButtonOkInvoice"
+            android:layout_height="wrap_content"
+            android:text="@string/okInvoice"
+            android:onClick="okInvoice"
+            android:layout_width="fill_parent"></Button>   
+            <Button
+            android:id="@+id/ButCancInvoice"
+            android:layout_height="wrap_content"
+            android:text="@string/cancInvoice"
+            android:onClick="cancInvoice"
+            android:layout_width="fill_parent"></Button>               
+
+ </TableLayout>
+</ScrollView>

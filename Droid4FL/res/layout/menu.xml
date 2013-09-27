@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center">
+    <!-- Single menu item
+         Set id, icon and Title for each menu item
+    -->
+    <item android:id="@+id/link"
+          android:icon="@drawable/dropboxlink"
+          android:title="Collegati" />
+
+    <item android:id="@+id/sync"
+          android:icon="@drawable/dropboxsync"
+          android:title="Sincronizza" />
+    
+    
+    <item android:id="@+id/open_invoice"
+          android:icon="@drawable/ic_launcher"
+          android:title="Visualizza Fatture" />
+ 
+    <item android:id="@+id/menu_preferences"
+          android:icon="@drawable/icon"
+          android:title="Preferences" />
+</menu>

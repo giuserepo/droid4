@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:gravity="center_horizontal"
+            android:layout_gravity="top"
+            android:textSize="10pt" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fattura"
+            android:gravity="center_horizontal"
+            android:layout_gravity="top"
+            android:textSize="8pt" />
+        	    <Spinner
+	        android:id="@+id/spinner_fatture"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:prompt="@string/fattura"
+	        android:layout_marginTop="20dip"
+	        android:layout_marginLeft="8dip"
+	        android:layout_marginRight="8dip"
+	    />
+        
+        <Button
+            android:id="@+id/Button_ExecInvoice"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:onClick="launchForm"
+            android:text="@string/load_ciclo_attivo"></Button>
+
+    </LinearLayout>
+
